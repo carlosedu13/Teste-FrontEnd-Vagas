@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>StickersShop</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Carlos Eduardo">
+		<meta name="description" content="Site para compra de stickers web - Desafio Front End">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="assets/css/styles.css">
+	</head>
+
+	<body>
+		<main>
+
+			<header>
+				<h1>Formulário <br>para compra de </br><strong>pacote de stickers</strong></h1>
+      </header>
+      
+			<form action="#" method="POST" role="form">
+				<section>
+					<label for="checkbox-group" id="label-checkbox-group">Quais stickers?</label>
+					<div id="checkbox-group" aria-labelledby="label-checkbox-group" aria-required="true">
+              <div class="custom-checkbox" aria-checked="false" role="checkbox" aria-labelledby="react-check">
+                  <input type="checkbox" class="custom-input" id="check1" value="React">
+                  <label class="custom-label" for="check1" id="react-check" tabindex="0">React</label>
+              </div>
+              <div class="custom-checkbox" aria-checked="false" role="checkbox" aria-labelledby="vue-check">
+                  <input type="checkbox" class="custom-input" id="check2" value="Vue">
+                  <label class="custom-label" for="check2" id="vue-check" tabindex="0">Vue</label>
+              </div>
+              <div class="custom-checkbox" aria-checked="false" role="checkbox" aria-labelledby="angular-check">
+                  <input type="checkbox" class="custom-input" id="check3" value="Angular">
+                  <label class="custom-label" for="check3" id="angular-check" tabindex="0">Angular</label>
+              </div>
+          </div>
+        </section>
+        
+				<section>
+					<label for="counter" id="stickers-label">Quantos stickers de cada?</label>
+					<div class="counter" id="counter" aria-labelledby="stickers-label">
+						<svg xmlns="http://www.w3.org/2000/svg" id="minus-counter">
+							<path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"></svg>
+						<input type="number" placeholder="0" class="counter-input" role="textbox" aria-labelledby="stickers-label" aria-required="true">
+						<svg xmlns="http://www.w3.org/2000/svg" id="plus-counter">
+							<path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z"></svg>
+					</div>
+				</section>
+                
+				<section>
+					<label for="description" id="description">Observações:</label>
+					<textarea name="description" placeholder="Ex: Gostaria de stickers 3x2cm." role="textbox" aria-labelledby="description" aria-required="false"></textarea>
+        </section>
+                
+				<footer>
+					<div id="success"></div>
+					<button type="submit" class="submit" aria-disabled="true" role="button" aria-label="enviar">Enviar</button>
+        </footer>
+      </form>
+    </main>
+
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
